@@ -1,5 +1,21 @@
 .header {
     width: 100%;
-    height: 200px;
-    background: red;
+    height: 421.5px;
+    background-color: #EEEEEE;
+
+    div {
+
+        &.container {
+            width: 1002px;
+            height: 421px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        div {
+            width: 350px;
+            height: 421.5px;
+            background-color: #ED1C24;
+        }
+    }
 }
