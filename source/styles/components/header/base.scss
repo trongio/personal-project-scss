@@ -1,23 +1,48 @@
- header {
+header {
     width: 100%;
     height: 421.5px;
     background-color: #EEEEEE;
- 
+
+    a {
+
+        &.menu {
+            padding: 16px 17px;
+            float: left;
+            background-color: #111111;
+        }
+    }
+
     .container {
         width: 1002px;
         height: 421px;
         margin: 0 auto;
 
         div {
+
             &.red-menu {
-                color: #FFFFFF;
-                float: left;
                 position: relative;
                 width: 350px;
                 height: 392px;
-                background-color: #ED1C24;
                 padding-top: 29px;
                 padding-left: 33px;
+                float: left;
+                background-color: #ED1C24;
+                color: #FFFFFF;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 20px;
+                        padding: 0;
+
+                        &.bottom-border {
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                        }
+                    }
+                }
 
                 a {
                     text-decoration: none;
@@ -41,21 +66,24 @@
 
                 p {
                     font-family: 'Montserrat', sans-serif;
-                    font-weight: 700;
                     font-size: 22px;
-                    line-height: 26px;
+                    font-weight: 700;
+                    line-height: 0;
+
                     &.shadows {
                         font-family: 'Montserrat', sans-serif;
-                        font-weight: 700;
                         font-size: 26px;
+                        font-weight: 700;
                     }
                 }
 
                 .admissions {
                     display: flex;
+
                     img {
                         margin-right: 10px;
                     }
+
                     a {
                         font-size: 18px;
                     }
@@ -63,16 +91,17 @@
 
                 span {
                     padding: 3px 5px;
+                    background-color: #111111;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
                     line-height: 18px;
-                    background-color: #111111;
+
                     &.date {
-                        font-family: 'Open Sans', sans-serif;
                         padding: 0;
+                        background-color: transparent;
+                        font-family: 'Open Sans', sans-serif;
                         font-size: 16px;
                         line-height: 20px;
-                        background-color: transparent;
                     }
                 }
 
@@ -82,25 +111,19 @@
                     bottom: 0;
 
                     img {
+                        margin: -2.5px;
                         padding: 10px;
                         border: 1px solid #FFFFFF;
-                        margin: -2.5px;
                     }
                 }
             }
         }
     }
-    a {
-        &.menu{
-            float: left;
-            background-color: #111111;
-            padding: 16px 17px;
-        }
-    }
-    .header-bar{
+
+    .header-bar {
         width: 100%;
         background-color: #111111;
-        .container{
+        .container {
             display: flex;
             height: 65px;
         }
@@ -108,12 +131,12 @@
             align-items: center;
             align-content: flex-end;
         }
-        &::before{
+
+        &::before {
             content:'';
             width: 550px;
             height: 65px;
             background-color: #DBDBDB;
-             
         }
     }
 }

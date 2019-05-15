@@ -1,9 +1,9 @@
- .overview {
-    
+.overview {
     width: 100%;
     height: 524px;
-    background-color: rgb(255, 255, 255);
     margin-top: 64px;
+    background-color: rgb(255, 255, 255);
+
     .container {
         width: 1002px;
         height: 421px;
@@ -19,6 +19,7 @@
         }
 
         .article {
+            color: #222222;
             height: 421px;
             width: 1000px;
             padding-top: 40px;
@@ -29,16 +30,18 @@
                 font-size: 30px;
             }
 
-            p {
-                font-size: 20px;
-                &:last-child{
+            div {
+                display: flex;
+
+                p {
                     font-size: 14px;
                 }
             }
 
-            div {
-                display: flex;
-                p {
+            p {
+                font-size: 20px;
+
+                &:last-child {
                     font-size: 14px;
                 }
             }
