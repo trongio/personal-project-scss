@@ -1,3 +1,20 @@
-.header {
+header {
 
+    .row-1 {
+
+        .container {
+            width: 685px;
+        }
+    }
+
+    .row-2 {
+
+        .container {
+            width: 685px;
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
 }
