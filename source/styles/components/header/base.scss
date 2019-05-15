@@ -40,6 +40,10 @@ header {
 
                         &.bottom-border {
                             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+                            &:last-child {
+                                 padding-bottom: 10px;
+                            }
                         }
                     }
                 }
@@ -106,14 +110,20 @@ header {
                 }
 
                 .icons {
+                    display: flex;
                     position: absolute;
                     right: 0;
                     bottom: 0;
 
-                    img {
-                        margin: -2.5px;
+                    div {
+                        display: flex;
                         padding: 10px;
-                        border: 1px solid #FFFFFF;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+
+                        img {
+                            align-self: center;
+                            justify-self: center;
+                        }
                     }
                 }
             }
@@ -123,14 +133,19 @@ header {
     .header-bar {
         width: 100%;
         background-color: #111111;
+
+        div {
+            align-items: center;
+            align-content: flex-end;
+
+        }
+
         .container {
             display: flex;
             height: 65px;
         }
-        div {
-            align-items: center;
-            align-content: flex-end;
-        }
+
+
 
         &::before {
             content:'';
