@@ -3,17 +3,14 @@
     height: 421.5px;
     background-color: #EEEEEE;
  
-    div {
-        &.container {
-            width: 1002px;
-            height: 421px;
-            margin: 0 auto;
-            background-color: gray;
-        }
+    .container {
+        width: 1002px;
+        height: 421px;
+        margin: 0 auto;
 
         div {
-            color: #FFFFFF;
             &.red-menu {
+                color: #FFFFFF;
                 float: left;
                 position: relative;
                 width: 350px;
@@ -21,6 +18,75 @@
                 background-color: #ED1C24;
                 padding-top: 29px;
                 padding-left: 33px;
+
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-family: 'Montserrat', sans-serif;
+                    &.head{
+                        display: block;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 90px;
+                        margin-top: -10px;
+                        &::before{
+                            content: 'E';
+                            font-size: 32.21px;
+                            padding: 6px 15px;
+                            border: 3px solid #FFFFFF;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26px;
+                    &.shadows {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+                        font-size: 26px;
+                    }
+                }
+
+                .admissions {
+                    display: flex;
+                    img {
+                        margin-right: 10px;
+                    }
+                    a {
+                        font-size: 18px;
+                    }
+                }
+
+                span {
+                    padding: 3px 5px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 10px;
+                    line-height: 18px;
+                    background-color: #111111;
+                    &.date {
+                        font-family: 'Open Sans', sans-serif;
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 20px;
+                        background-color: transparent;
+                    }
+                }
+
+                .icons {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                    img {
+                        padding: 10px;
+                        border: 1px solid #FFFFFF;
+                        margin: -2.5px;
+                    }
+                }
             }
         }
     }
@@ -35,7 +101,19 @@
         width: 100%;
         background-color: #111111;
         .container{
+            display: flex;
             height: 65px;
+        }
+        div {
+            align-items: center;
+            align-content: flex-end;
+        }
+        &::before{
+            content:'';
+            width: 550px;
+            height: 65px;
+            background-color: #DBDBDB;
+             
         }
     }
 }
