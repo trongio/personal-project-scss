@@ -4,16 +4,23 @@ header {
 
         .container {
             width: 685px;
+            div {
+
+                &.sidebar {
+                    position: relative;
+                    width: 344px;
+                }
+            }
         }
     }
 
     .row-2 {
 
         .container {
-            width: 685px;
+            width: 694px;
 
             &::after {
-                left: 0;
+                left: 4px;
             }
         }
     }

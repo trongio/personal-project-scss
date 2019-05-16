@@ -3,7 +3,76 @@ header {
     .row-1 {
 
         .container {
-            width: 320px;
+            width: 272px;
+
+            div {
+
+                &.sidebar {
+                    width: 272px;
+                    padding-top: 30px;
+                    padding-left: 29px;
+
+                    .title {
+                        margin-bottom: 55px;
+                        font-size: 14.45px;
+
+                        &::before {
+                            margin-right: 6px;
+                            padding: 2.3px 6px;
+                            font-size: 25.85px;
+                        }
+                    }
+
+                    .photography {
+                        padding-left: 6px;
+
+                        > span {
+                            width: 101px;
+                            margin-bottom: 6.9px;
+                            font-size: 8px;
+                            letter-spacing: 1.4px;
+                        }
+                    }
+
+                    .wrap {
+                        padding-left: 9px;
+                        width: 209px;
+
+                        > span {
+                            width: 180px;
+                            margin-bottom: 20px;
+                            font-size: 13px;
+                            word-spacing: 0.7px;
+                        }
+                    }
+
+                    .admission {
+                        letter-spacing: -1.2px;
+
+                        &::before {
+                            margin-right: 13px;
+                            transform: translateX(7px);
+                        }
+                    }
+
+                    .icons {
+                        right: 71px;
+                        bottom: -3px;
+                        }
+                }
+            }
+
+            a {
+
+                &.menu {
+
+                    &::before {
+                        position: absolute;
+                        right: 0;
+                        top: 15px;
+                    }
+                }
+            }
         }
     }
 
