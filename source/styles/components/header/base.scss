@@ -23,7 +23,7 @@ header {
                     padding-top: 31px;
                     padding-left: 33px;
                     float: left;
-                    background-color: #ED1C24;
+                    background-color: rgba(237, 28, 35, 0.97);
                     color: #FFFFFF;
 
                     .title {
@@ -175,24 +175,11 @@ header {
         overflow: hidden;
         background-color: #DBDBDB;
 
-        div {
-            display: flex;
-            z-index: 1;
-            align-items: center;
-
-            img {
-                margin-right: -0.5px;
-                padding: 20px 21px;
-                border: 1px solid rgba(255, 255, 255, 0.3);
-            }
-        }
-
         .container {
             display: flex;
             position: relative;
             justify-content: flex-end;
             width: 1002px;
-            height: 65px;
 
             &::after {
                 content: '';
@@ -201,6 +188,25 @@ header {
                 width: 200%;
                 height: 100%;
                 background-color: #111111;
+            }
+
+            .arrows {
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                display: flex;
+                align-content: flex-end;
+                z-index: 1;
+                align-items: center;
+
+                .left {
+                    content: url(/images/header/Left.png);
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
+                    padding: 20px 22px 20px;
+                }
+
+                .right {
+                    content: url(/images/header/Right.png);
+                    padding: 20px 22px 20px 21px;
+                }
             }
         }
     }
