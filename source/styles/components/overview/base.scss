@@ -14,10 +14,19 @@
         height: 100%;
 
         .grey {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
             width: 350px;
             height: 522px;
             background-color: #898989;
+
+            img {
+                position: absolute;
+            }
         }
 
         .article {
@@ -38,42 +47,39 @@
             }
 
             > p {
-                margin-bottom: 30px;
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: 300;
-                line-height: 30px;
+                line-height: 20px;
+                width: 542px;
 
                 &:first-of-type {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    width: initial;
                     text-decoration: underline;
                     text-decoration-color: #DBDBDB;
                 }
-
-                &:last-child {
-                    padding-right: 65px;
-                    font-size: 14px;
-                    line-height: 20px;
-                }
             }
 
-            div {
-                display: flex;
+            .multi-clmn {
+                width: 546px;
+                margin-bottom: 16px;
+                column-gap: 41px;
+                column-width: 200px;
 
                 p {
-                    margin-bottom: 30px;
-                    padding-right: 34px;
-                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
                     font-weight: 300;
+                    letter-spacing: -1px;
                     line-height: 20px;
 
-                    &:first-child {
-                        max-width: 49%;
-                        margin-right: -2px;
+                    &:last-child {
+                        line-height: 18px;
+                        letter-spacing: -1px;
                     }
 
-                    &:last-child {
-                        padding-right: 12px;
-                        line-height: 18px;
-                    }
                 }
             }
 

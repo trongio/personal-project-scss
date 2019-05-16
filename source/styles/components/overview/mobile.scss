@@ -1,68 +1,71 @@
 .overview {
     height: 599px;
-    background-color:#FFFFFF;
+    background-color: rgb(255, 255, 255);
     text-align: center;
- 
-    .container{
-        width:270px;
- 
-        .grey{
+
+    .container {
+        width: 270px;
+
+        .grey {
             display: none;
         }
-        .article{
-            width:100%;
+
+        .article {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
             padding-top: 38px;
             padding-left: 0;
- 
-            &::before{
-                display:none;
+
+            &::before {
+                display: none;
             }
- 
+
             h1 {
                 margin-bottom: 24px;
                 font-size: 24px;
-                letter-spacing: -0.8px;
+                letter-spacing: -.8px;
             }
- 
-            div {
-                    flex-direction: column;
-                    margin-bottom: 5px;
-                p {
-                    padding-right: 0px;
-                    padding-left: 9px;
-                    margin-bottom: 14px;
- 
-                    &:first-child{
-                        margin-right: 8px;
-                        max-width: 100%;
-                    }
-                    &:last-child{
-                        padding-right: 0px;
-                        padding-left:0px;
-                        line-height: 18px;
-                    }
-                }
- 
-            }
- 
+
             > p {
                 margin-bottom: 23px;
- 
-                &:first-of-type{
+
+                &:first-of-type {
+                    margin-bottom: 24px;
                     padding-right: 2px;
                     padding-left: 2px;
                     font-size: 18px;
-                    letter-spacing: -0.1px;
-                    word-spacing: -0.4px;
+                    letter-spacing: -.1px;
+                    word-spacing: -.4px;
                 }
- 
+
                 &:last-child {
                     padding-right: 0;
+                    width: initial;
+                }
+            }
+
+            .multi-clmn {
+                width: initial;
+                margin-bottom: 16px;
+                column-gap: initial;
+
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 300;
+                    letter-spacing: -1px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                        line-height: 18px;
+                        letter-spacing: -1px;
+                    }
+
                 }
             }
         }
     }
- }
+}

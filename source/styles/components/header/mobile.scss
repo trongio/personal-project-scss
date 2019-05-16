@@ -36,14 +36,14 @@ header {
                     }
 
                     .wrap {
-                        padding-left: 9px;
                         width: 209px;
+                        padding-left: 9px;
 
                         > span {
                             width: 180px;
                             margin-bottom: 20px;
                             font-size: 13px;
-                            word-spacing: 0.7px;
+                            word-spacing: .7px;
                         }
                     }
 
@@ -69,8 +69,8 @@ header {
 
                     &::before {
                         position: absolute;
-                        right: 0;
                         top: 15px;
+                        right: 0;
                     }
                 }
             }
