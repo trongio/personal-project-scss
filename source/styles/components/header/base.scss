@@ -196,7 +196,8 @@ header {
                 z-index: 1;
                 align-content: flex-end;
                 align-items: center;
-                border: 1px solid rgba(255, 255, 255, .3);
+                border-left: 1px solid rgba(255, 255, 255, .3);
+                border-right: 1px solid rgba(255, 255, 255, .3);
 
                 .left {
                     content: url(/images/header/Left.png);
