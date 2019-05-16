@@ -1,6 +1,7 @@
 header {
 
     .row-1 {
+        height: 424px;
 
         .container {
             width: 272px;
@@ -84,10 +85,10 @@ header {
             &::after {
                 left: 0;
             }
-        }
 
-        .arrows {
-            display: none;
+            .arrows {
+                display: none;
+            }
         }
     }
 }

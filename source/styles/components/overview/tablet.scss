@@ -1,3 +1,42 @@
 .overview {
+    background-color: #ffffff;
 
+    .container {
+
+        .grey {
+            display: none;
+        }
+
+        .article {
+            padding-left: 207px;
+
+            div {
+
+                p {
+
+                    &:first-child {
+                        width: 259px;
+                        margin-right: 36px;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+
+                    &:last-child {
+                        width: 310px;
+                    }
+                }
+            }
+
+            p {
+                width: 572px;
+
+                &:last-child {
+                    width: 600px;
+                    padding: 0;
+                }
+            }
+
+
+        }
+    }
 }

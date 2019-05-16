@@ -23,7 +23,7 @@ header {
                     padding-top: 31px;
                     padding-left: 33px;
                     float: left;
-                    background-color: rgba(237, 28, 35, 0.97);
+                    background-color: rgba(237, 28, 35, .97);
                     color: #FFFFFF;
 
                     .title {
@@ -32,7 +32,7 @@ header {
                         font-family: 'Montserrat', sans-serif;
                         font-size: 18px;
                         font-weight: 700;
-                        letter-spacing: -0.3px;
+                        letter-spacing: -.3px;
                         text-decoration: none;
                         text-transform: uppercase;
 
@@ -59,7 +59,7 @@ header {
                             color: #FFFFFF;
                             font-family: 'Montserrat', sans-serif;
                             font-size: 9px;
-                            letter-spacing: 0.67px;
+                            letter-spacing: .67px;
                         }
                     }
 
@@ -67,13 +67,13 @@ header {
                         width: 281px;
                         margin-bottom: 17px;
                         padding-left: 4px;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+                        border-bottom: 1px solid rgba(255, 255, 255, .3);
 
                         > h1 {
                             font-family: 'Montserrat', sans-serif;
                             font-size: 22px;
                             font-weight: 700;
-                            letter-spacing: -0.8px;
+                            letter-spacing: -.8px;
                         }
 
                         > h2 {
@@ -81,7 +81,7 @@ header {
                             font-family: 'Montserrat', sans-serif;
                             font-size: 26px;
                             font-weight: 700;
-                            letter-spacing: -1.5px;
+                            letter-spacing: -1.2px;
                         }
 
                         > span {
@@ -90,8 +90,9 @@ header {
                             margin-bottom: 20px;
                             font-family: 'Open Sans', sans-serif;
                             font-size: 16px;
+                            font-weight: 300;
                             line-height: 20px;
-                            word-spacing: -2px;
+                            word-spacing: -.6px;
                         }
                     }
 
@@ -104,7 +105,7 @@ header {
                         &::before {
                             content: url(/images/header/shape12.png);
                             display: flex;
-                            margin-right: 0px;
+                            margin-right: 0;
                             margin-right: 9px;
                             transform: translateX(1px);
                         }
@@ -122,7 +123,7 @@ header {
                                 content: url(/images/header/eye.png);
                                 display: flex;
                                 padding: 13px 11px 8px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
 
@@ -132,7 +133,7 @@ header {
                                 content: url(/images/header/image.png);
                                 display: flex;
                                 padding: 11px 10px 6px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
 
@@ -142,7 +143,7 @@ header {
                                 content: url(/images/header/marker.png);
                                 display: flex;
                                 padding: 10px 12px 7px 13px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
                     }
@@ -191,21 +192,21 @@ header {
             }
 
             .arrows {
-                border: 1px solid rgba(255, 255, 255, 0.3);
                 display: flex;
-                align-content: flex-end;
                 z-index: 1;
+                align-content: flex-end;
                 align-items: center;
+                border: 1px solid rgba(255, 255, 255, .3);
 
                 .left {
                     content: url(/images/header/Left.png);
-                    border-right: 1px solid rgba(255, 255, 255, 0.3);
-                    padding: 20px 22px 20px;
+                    padding: 21px 22px 21px;
+                    border-right: 1px solid rgba(255, 255, 255, .3);
                 }
 
                 .right {
                     content: url(/images/header/Right.png);
-                    padding: 20px 22px 20px 21px;
+                    padding: 21px 22px 21px 21px;
                 }
             }
         }
