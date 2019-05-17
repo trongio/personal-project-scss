@@ -10,6 +10,34 @@ header {
                 &.sidebar {
                     position: relative;
                     width: 344px;
+
+                    .icons {
+                        display: flex;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+
+                        .eye {
+
+                            &::before {
+                                width: 41px;
+                            }
+                        }
+
+                        .image {
+
+                            &::before {
+                                width: 42px;
+                            }
+                        }
+
+                        .marker {
+
+                            &::before {
+                                width: 40px;
+                            }
+                        }
+                    }
                 }
             }
         }
