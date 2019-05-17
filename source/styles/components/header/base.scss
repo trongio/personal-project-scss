@@ -122,60 +122,34 @@ header {
                         right: 0;
                         bottom: 0;
 
-                        .eye {
+                        $icons: (eye: 'eye.png', image: 'image.png',marker: 'marker.png');
 
-                            &::before {
-                                content: '';
-                                display: flex;
-                                width: 43px;
-                                height: 41px;
-                                border: 1px solid $color-5;
-                                background-image: url(/images/header/eye.png);
-                                background-repeat: no-repeat;
-                                background-position: center;
-                            }
+                        @each $index, $item in $icons {
 
-                            &:hover::before {
-                                filter: invert(100%);
-                                border: 1px solid $color-6;
-                            }
-                        }
+                            .#{$index} {
 
-                        .image {
+                                &::before {
+                                    content: '';
+                                    display: flex;
+                                    width: 43px;
+                                    height: 41px;
+                                    border: 1px solid $color-5;
+                                    background-image: url(/images/header/#{$item});
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
 
-                            &::before {
-                                content: '';
-                                display: flex;
-                                width: 43px;
-                                height: 41px;
-                                border: 1px solid $color-5;
-                                background-image: url(/images/header/image.png);
-                                background-repeat: no-repeat;
-                                background-position: center;
-                            }
+                                @if $index == marker {
 
-                            &:hover::before {
-                                filter: invert(100%);
-                                border: 1px solid $color-6;
-                            }
-                        }
+                                    &::before {
+                                        width: 40px;
+                                    }
+                                }
 
-                        .marker {
-
-                            &::before {
-                                content: '';
-                                display: flex;
-                                width: 40px;
-                                height: 41px;
-                                border: 1px solid $color-5;
-                                background-image: url(/images/header/marker.png);
-                                background-repeat: no-repeat;
-                                background-position: center;
-                            }
-
-                            &:hover::before {
-                                filter: invert(100%);
-                                border: 1px solid $color-6;
+                                &:hover::before {
+                                    filter: invert(100%);
+                                    border: 1px solid $color-6;
+                                }
                             }
                         }
                     }
@@ -188,13 +162,13 @@ header {
                 text-decoration: none;
 
                 &.menu {
-
-                    &::before {
-                        content: url(/images/header/icon.png);
-                        padding: 14px 18px;
-                        float: left;
-                        background-color: $color-4;
-                    }
+                    width: 64px;
+                    height: 57px;
+                    float: left;
+                    background-color: $color-4;
+                    background-image: url(/images/header/icon.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
             }
         }
@@ -232,21 +206,31 @@ header {
                 border-left: 1px solid $color-5;
 
                 .left {
-                    content: url(/images/header/left.png);
-                    padding: 21px 22px 21px;
+                    width: 57px;
+                    height: 100%;
                     border-right: 1px solid $color-5;
+                    background-image: url(/images/header/left.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
 
                     &:hover {
-                        content: url(/images/header/left-red.png);
+                        background-image: url(/images/header/left-red.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
                     }
                 }
 
                 .right {
-                    content: url(/images/header/right.png);
-                    padding: 21px 22px 21px 21px;
+                    width: 57px;
+                    height: 100%;
+                    background-image: url(/images/header/right.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
 
                     &:hover {
-                        content: url(/images/header/right-red.png);
+                        background-image: url(/images/header/right-red.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
                     }
                 }
             }

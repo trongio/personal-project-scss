@@ -66,12 +66,9 @@ header {
             a {
 
                 &.menu {
-
-                    &::before {
-                        position: absolute;
-                        top: 15px;
-                        right: 0;
-                    }
+                    position: absolute;
+                    top: 15px;
+                    right: 0;
                 }
             }
         }
