@@ -131,19 +131,20 @@ header {
                                 &::before {
                                     content: '';
                                     display: flex;
-                                    width: 43px;
+
+                                    @if $index == marker {
+                                        width: 40px;
+                                    }
+
+                                    @else {
+                                        width: 43px;
+                                    }
+
                                     height: 41px;
                                     border: 1px solid $color-5;
                                     background-image: url(/images/header/#{$item});
                                     background-repeat: no-repeat;
                                     background-position: center;
-                                }
-
-                                @if $index == marker {
-
-                                    &::before {
-                                        width: 40px;
-                                    }
                                 }
 
                                 &:hover::before {
