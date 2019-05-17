@@ -5,10 +5,10 @@ header {
     .row-1 {
         display: flex;
         position: relative;
+        align-items: center;
         justify-content: center;
         height: 422px;
         overflow: hidden;
-        align-items: center;
 
         img {
             position: absolute;
@@ -130,6 +130,11 @@ header {
                                 padding: 13px 11px 8px 10px;
                                 border: 1px solid rgba(255, 255, 255, .3);
                             }
+
+                            &:hover::before {
+                                filter: invert(100%);
+                                border: 1px solid rgba(0, 0, 0, .3);
+                            }
                         }
 
                         .image {
@@ -140,6 +145,11 @@ header {
                                 padding: 11px 10px 6px 10px;
                                 border: 1px solid rgba(255, 255, 255, .3);
                             }
+
+                            &:hover::before {
+                                filter: invert(100%);
+                                border: 1px solid rgba(0, 0, 0, .3);
+                            }
                         }
 
                         .marker {
@@ -149,6 +159,11 @@ header {
                                 display: flex;
                                 padding: 10px 12px 7px 13px;
                                 border: 1px solid rgba(255, 255, 255, .3);
+                            }
+
+                            &:hover::before {
+                                filter: invert(100%);
+                                border: 1px solid rgba(0, 0, 0, .3);
                             }
                         }
                     }
@@ -208,11 +223,19 @@ header {
                     content: url(/images/header/Left.png);
                     padding: 21px 22px 21px;
                     border-right: 1px solid rgba(255, 255, 255, .3);
+
+                    &:hover {
+                        content: url(/images/header/Left-red.png);
+                    }
                 }
 
                 .right {
                     content: url(/images/header/Right.png);
                     padding: 21px 22px 21px 21px;
+
+                    &:hover {
+                        content: url(/images/header/Right-red.png);
+                    }
                 }
             }
         }

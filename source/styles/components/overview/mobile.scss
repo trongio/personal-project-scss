@@ -33,16 +33,13 @@
 
                 &:first-of-type {
                     margin-bottom: 24px;
-                    padding-right: 2px;
-                    padding-left: 2px;
                     font-size: 18px;
-                    letter-spacing: -.1px;
-                    word-spacing: -.4px;
+                    letter-spacing: -.01px;
                 }
 
                 &:last-child {
-                    padding-right: 0;
                     width: initial;
+                    padding-right: 0;
                 }
             }
 
@@ -52,18 +49,17 @@
                 column-gap: initial;
 
                 p {
+                    margin-bottom: 14px;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 300;
-                    letter-spacing: -1px;
+                    letter-spacing: -.9px;
                     line-height: 20px;
-                    margin-bottom: 10px;
 
                     &:last-child {
                         margin-bottom: 0;
+                        letter-spacing: -.89px;
                         line-height: 18px;
-                        letter-spacing: -1px;
                     }
-
                 }
             }
         }

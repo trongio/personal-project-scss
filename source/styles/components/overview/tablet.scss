@@ -7,5 +7,16 @@
         .grey {
             display: none;
         }
+
+        .article {
+
+            > p {
+                width: 594px;
+
+                &:first-of-type {
+                    width: 582px;
+                }
+            }
+        }
     }
 }

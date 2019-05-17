@@ -16,12 +16,12 @@
         .grey {
             display: flex;
             position: relative;
-            overflow: hidden;
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
             width: 350px;
             height: 522px;
+            overflow: hidden;
             background-color: #898989;
 
             img {
@@ -34,7 +34,7 @@
             z-index: 1;
             height: 421px;
             padding-top: 43px;
-            padding-left: 48px;
+            padding-left: 49px;
             color: #222222;
             font-family: 'Open Sans', sans-serif;
 
@@ -47,17 +47,17 @@
             }
 
             > p {
+                width: 542px;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 20px;
-                width: 542px;
 
                 &:first-of-type {
+                    width: initial;
                     margin-bottom: 30px;
                     font-size: 20px;
                     font-weight: 300;
                     line-height: 30px;
-                    width: initial;
                     text-decoration: underline;
                     text-decoration-color: #DBDBDB;
                 }
@@ -76,10 +76,9 @@
                     line-height: 20px;
 
                     &:last-child {
-                        line-height: 18px;
                         letter-spacing: -1px;
+                        line-height: 18px;
                     }
-
                 }
             }
 
